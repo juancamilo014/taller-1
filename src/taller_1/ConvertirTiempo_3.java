@@ -96,7 +96,7 @@ public class ConvertirTiempo_3 extends javax.swing.JFrame {
             double Mb = Kb * 0.001;
             String resultado = String.valueOf(Mb);
             jLabel3.setText(resultado);
-        }
+        }}}}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
