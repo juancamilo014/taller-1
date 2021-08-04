@@ -35,9 +35,9 @@ public class ConvertirTiempo_3 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Kilobytes a Megabytes");
+        jLabel1.setText("Convertir segundos a minutos y horas");
 
-        jLabel2.setText("Kilobytes: ");
+        jLabel2.setText("Segundos: ");
 
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -46,7 +46,7 @@ public class ConvertirTiempo_3 extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Megabytes");
+        jLabel3.setText("tiempo:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +69,7 @@ public class ConvertirTiempo_3 extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addContainerGap()
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,11 +92,12 @@ public class ConvertirTiempo_3 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (evt.getSource() == jButton1) {
-            double Kb = Double.parseDouble(jTextField1.getText());
-            double Mb = Kb * 0.001;
-            String resultado = String.valueOf(Mb);
-            jLabel3.setText(resultado);
-        }}}}
+            int scound = Integer.parseInt(jTextField1.getText());
+            int h = scound / 3600;
+            int m = scound % 3600 / 60;
+            int s = scound % 60;
+            jLabel3.setText(String.valueOf(h+" hour "+m+" minute "+s+" second "));
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

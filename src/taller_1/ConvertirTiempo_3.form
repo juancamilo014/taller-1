@@ -46,7 +46,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="172" max="32767" attributes="0"/>
+              <EmptySpace pref="98" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,12 +73,12 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Kilobytes a Megabytes"/>
+        <Property name="text" type="java.lang.String" value="Convertir segundos a minutos y horas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Kilobytes: "/>
+        <Property name="text" type="java.lang.String" value="Segundos: "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
@@ -93,7 +93,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Megabytes"/>
+        <Property name="text" type="java.lang.String" value="tiempo:"/>
       </Properties>
     </Component>
   </SubComponents>
